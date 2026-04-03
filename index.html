@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Homes India — Luxury Real Estate</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ====== NAVBAR ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">&#9672;</span>
+        Elite<span class="logo-accent">Homes</span>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#listings" class="nav-link">Properties</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#contact" class="nav-cta">Book a Tour</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80" alt="Luxury Estate India" class="hero-img" />
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow fade-up delay-1">India's Premier Luxury Properties &nbsp;|&nbsp; Mumbai · Delhi · Bengaluru · Hyderabad</p>
+      <h1 class="hero-heading fade-up delay-2">
+        Find Your<br /><em>Budget-Friendly Ghar</em>
+      </h1>
+      <p class="hero-sub fade-up delay-3">
+        Curated luxury properties across India's most prestigious cities.<br />Your dream home is just one call away.
+      </p>
+      <div class="hero-actions fade-up delay-4">
+        <a href="#listings" class="btn btn-primary">Explore Properties</a>
+        <a href="#contact" class="btn btn-ghost">Talk to an Agent</a>
+      </div>
+    </div>
+    <div class="hero-stats fade-up delay-5">
+      <div class="stat"><span class="stat-num">1,200+</span><span class="stat-label">Properties</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">18</span><span class="stat-label">Cities</span></div>
+      <div class="stat-divider"></div>
+      <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Happy Clients</span></div>
+    </div>
+    <a href="#listings" class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ====== LISTINGS SECTION ====== -->
+  <section class="listings" id="listings">
+    <div class="section-container">
+      <div class="section-header">
+        <p class="section-eyebrow">Our Collection</p>
+        <h2 class="section-title">Featured <em>Properties</em></h2>
+        <p class="section-desc">Handpicked residences across India's most coveted addresses — from Lutyens' Delhi to Worli Sea Face.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="villa">Villa</button>
+        <button class="filter-btn" data-filter="penthouse">Penthouse</button>
+        <button class="filter-btn" data-filter="bungalow">Bungalow</button>
+        <button class="filter-btn" data-filter="apartment">Apartment</button>
+      </div>
+
+      <div class="property-grid" id="propertyGrid">
+
+        <!-- Card 1 — Lutyens Delhi Villa -->
+        <article class="property-card" data-type="villa" data-id="1">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&q=80" alt="Lutyens Delhi Villa" class="card-img" loading="lazy" />
+            <span class="card-badge">For Rent</span>
+            <span class="card-type">Villa</span>
+            <button class="card-save" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="card-body">
+            <div class="card-price">&#8377;50k <span class="per-month">/mo</span></div>
+            <h3 class="card-title">Whole 3bhk Villa</h3>
+            <p class="card-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ansal golf , knowledge park 2, Greater Noida, Uttar Pradesh
+            </p>
+            <div class="card-meta">
+              <span>&#128716; 3 Beds</span>
+              <span>&#128704; 2 Baths</span>
+              <span>&#128208; 6,800 sqft</span>
+            </div>
+            <button class="btn btn-outline view-details" data-id="1">View Details</button>
+          </div>
+        </article>
+
+        <!-- Card 2 — Mumbai Penthouse -->
+        <article class="property-card" data-type="penthouse" data-id="2">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=600&q=80" alt="Worli Sea Face Penthouse" class="card-img" loading="lazy" />
+            <span class="card-badge badge-rent">For Rent</span>
+            <span class="card-type">Apartment</span>
+            <button class="card-save" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="card-body">
+            <div class="card-price">&#8377;20k <span class="per-month">/mo</span></div>
+            <h3 class="card-title">2bhk Apartment</h3>
+            <p class="card-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Near by Ace city, Greater Noida, Uttar Pradesh
+            </p>
+            <div class="card-meta">
+              <span>&#128716; 2 Beds</span>
+              <span>&#128704; 2 Baths</span>
+              <span>&#128208; 1,200 sqft</span>
+            </div>
+            <button class="btn btn-outline view-details" data-id="2">View Details</button>
+          </div>
+        </article>
+
+        <!-- Card 3 — Jaipur Bungalow -->
+        <article class="property-card" data-type="bungalow" data-id="3">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=600&q=80" alt="Jaipur Heritage Bungalow" class="card-img" loading="lazy" />
+            <span class="card-badge">for rent</span>
+            <span class="card-type">house</span>
+            <button class="card-save" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="card-body">
+            <div class="card-price">&#8377;30k <span class="per-month">/mo</span></div>
+            <h3 class="card-title">Noida Heritage House</h3>
+            <p class="card-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Noida Sector 50, Noida, Uttar Pradesh
+            </p>
+            <div class="card-meta">
+              <span>&#128716; 4 Beds</span>
+              <span>&#128704; 2 Baths</span>
+              <span>&#128208; 3,600 sqft</span>
+            </div>
+            <button class="btn btn-outline view-details" data-id="3">View Details</button>
+          </div>
+        </article>
+
+        <!-- Card 4 — Bengaluru Apartment -->
+        <article class="property-card" data-type="apartment" data-id="4">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Indiranagar Luxury Apartment" class="card-img" loading="lazy" />
+            <span class="card-badge badge-rent">For Rent</span>
+            <span class="card-type">Apartment</span>
+            <button class="card-save" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="card-body">
+            <div class="card-price">&#8377;25k <span class="per-month">/mo</span></div>
+            <h3 class="card-title">Krisna Elite Homes</h3>
+            <p class="card-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Jalpura, Greater Noida, Uttar Pradesh
+            </p>
+            <div class="card-meta">
+              <span>&#128716; 2 Beds</span>
+              <span>&#128704; 2 Baths</span>
+              <span>&#128208; 1,300 sqft</span>
+            </div>
+            <button class="btn btn-outline view-details" data-id="4">View Details</button>
+          </div>
+        </article>
+
+        <!-- Card 5 — Hyderabad Villa -->
+        <article class="property-card" data-type="villa" data-id="5">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="Jubilee Hills Villa" class="card-img" loading="lazy" />
+            <span class="card-badge">For Rent</span>
+            <span class="card-type">Villa</span>
+            <button class="card-save" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="card-body">
+            <div class="card-price">&#8377;35k <span class="per-month">/mo</span></div>
+            <h3 class="card-title">Hills Prestige </h3>
+            <p class="card-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Delhi
+            </p>
+            <div class="card-meta">
+              <span>&#128716; 4 Beds</span>
+              <span>&#128704; 2 Baths</span>
+              <span>&#128208; 2,500 sqft</span>
+            </div>
+            <button class="btn btn-outline view-details" data-id="5">View Details</button>
+          </div>
+        </article>
+
+        <!-- Card 6 — Pune Penthouse -->
+        <article class="property-card" data-type="penthouse" data-id="6">
+          <div class="card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Koregaon Park Penthouse" class="card-img" loading="lazy" />
+            <span class="card-badge">For Rent</span>
+            <span class="card-type">House</span>
+            <button class="card-save" aria-label="Save property">&#9825;</button>
+          </div>
+          <div class="card-body">
+            <div class="card-price">&#8377;40k</div>
+            <h3 class="card-title">Koregaon House</h3>
+            <p class="card-location">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Delhi
+            </p>
+            <div class="card-meta">
+              <span>&#128716; 3Beds</span>
+              <span>&#128704; 2 Baths</span>
+              <span>&#128208; 2,800 sqft</span>
+            </div>
+            <button class="btn btn-outline view-details" data-id="6">View Details</button>
+          </div>
+        </article>
+
+      </div><!-- end grid -->
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="about" id="about">
+    <div class="section-container about-grid">
+      <div class="about-image-wrap">
+        <img src="https://images.unsplash.com/photo-1556912173-3bb406ef7e8a?w=700&q=80" alt="Our expert team" />
+        <div class="about-badge-float">
+          <span class="badge-num">5</span>
+          <span class="badge-text">Years of<br/>Excellence</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <p class="section-eyebrow">Who We Are</p>
+        <h2 class="section-title">India's Most Trusted<br/><em>Real Estate Partner</em></h2>
+        <p class="about-text">At EstateElite India, we don't just sell properties — we help families find homes that reflect their aspirations. With deep market expertise across Mumbai, Delhi, Bengaluru, Hyderabad, Pune and Jaipur, our agents bring unmatched knowledge and a personalised approach to every transaction.</p>
+        <div class="about-features">
+          <div class="about-feature">
+            <span class="feature-icon">&#9670;</span>
+            <div>
+              <strong>RERA Compliant</strong>
+              <p>All listed properties are verified and RERA registered for complete legal clarity.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <span class="feature-icon">&#9670;</span>
+            <div>
+              <strong>Pan-India Network</strong>
+              <p>Exclusive access to off-market listings across 18 premium Indian cities.</p>
+            </div>
+          </div>
+          <div class="about-feature">
+            <span class="feature-icon">&#9670;</span>
+            <div>
+              <strong>End-to-End Service</strong>
+              <p>From home loan assistance to stamp duty and registration — we handle it all.</p>
+            </div>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary">Meet Our Agents</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CONTACT ====== -->
+  <section class="contact" id="contact">
+    <div class="section-container contact-grid">
+      <div class="contact-info">
+        <p class="section-eyebrow">Get In Touch</p>
+        <h2 class="section-title">Let's Find Your<br/><em>Dream Ghar</em></h2>
+        <p class="contact-text">Our agents are available 7 days a week across India. Reach out and we'll respond within 24 hours.</p>
+        <div class="contact-details">
+          <div class="contact-detail-item">
+            <span class="cd-icon">&#128222;</span>
+            <div><strong>Phone</strong><p>+91 xxxxxxxxxx</p></div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="cd-icon">&#9993;</span>
+            <div><strong>Email</strong><p>EliteHomes@email.com</p></div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="cd-icon">&#128205;</span>
+            <div><strong>Head Office</strong><p>Noida, Uttar Pradesh</p></div>
+          </div>
+          <div class="contact-detail-item">
+            <span class="cd-icon">&#127970;</span>
+            <div><strong>Branch Offices</strong><p>New Delhi &middot; Bengaluru &middot; Hyderabad &middot; Pune &middot; Jaipur</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form-wrap">
+        <form class="contact-form" id="contactForm" action="contact.php" method="POST">
+          <div id="formSuccess" class="form-success hidden">
+            <span class="success-icon">&#10003;</span>
+            <strong>Message Sent!</strong>
+            <p>Thank you! Our agent will reach you within 24 hours.</p>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="Aman Sharma" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="aman@email.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="phone">Mobile Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 9600000042" />
+          </div>
+          <div class="form-group">
+            <label for="city">Preferred City</label>
+            <select id="city" name="city">
+              <option value="">Select city</option>
+              <option>New Delhi</option>
+              <option>Bengaluru</option>
+              <option>Hyderabad</option>
+              <option>Pune</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="interest">I'm interested in</label>
+            <select id="interest" name="interest">
+              <option value="">Select property type</option>
+              <option>Villa</option>
+              <option>Apartment</option>
+              <option>General Enquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us your budget, preferred location, or any questions..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            <span id="btnText">Send Message</span>
+            <span id="btnLoader" class="btn-loader hidden"></span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="nav-logo">
+          <span class="logo-icon">&#9672;</span>
+          Elite<span class="logo-accent">Homes</span>
+        </a>
+        <p>India's finest properties, curated for those who settle for nothing but the best. RERA Registered.</p>
+        <div class="social-links">
+          <a href="#" aria-label="Instagram" class="social-link">IG</a>
+          <a href="#" aria-label="Twitter" class="social-link">TW</a>
+          <a href="#" aria-label="LinkedIn" class="social-link">LI</a>
+          <a href="#" aria-label="YouTube" class="social-link">YT</a>
+        </div>
+      </div>
+      <div class="footer-links-group">
+        <h4>Properties</h4>
+        <ul>
+          <li><a href="#">Villas</a></li>
+          <li><a href="#">Penthouses</a></li>
+          <li><a href="#">Apartments</a></li>
+          <li><a href="#">Bungalows</a></li>
+          <li><a href="#">New Listings</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Cities</h4>
+        <ul>
+          <li><a href="#">New Delhi</a></li>
+          <li><a href="#">Bengaluru</a></li>
+          <li><a href="#">Hyderabad</a></li>
+          <li><a href="#">Pune</a></li>
+        </ul>
+      </div>
+      <div class="footer-links-group">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Agents</a></li>
+          <li><a href="#">RERA Info</a></li>
+          <li><a href="#">Home Loans</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Elite Homes India Pvt. Ltd. All rights reserved. | Aditya Verma |</p>
+    </div>
+  </footer>
+
+  <!-- ====== PROPERTY DETAILS MODAL ====== -->
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-label="Property Details">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close">&#10005;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
